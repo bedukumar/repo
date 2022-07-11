@@ -1,0 +1,413 @@
+
+
+
+#jnc{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+#jobstatus{
+    width: 70%;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#jobcompanybap{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#jobdisc{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: rgb(55, 55, 55);
+}
+#jobcompany{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(66, 65, 65);
+}
+#companyidonbedu{
+    width: 25%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#clogo{
+    height: 3em;
+    width: 3em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.491);
+}
+#companynam{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.367);
+    
+}
+
+#companynam>button{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+#companynam>button a{
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    border: none;
+    color: black;
+}
+
+#companyinfo{
+    text-decoration: none;
+    color: rgb(88, 114, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#intimateme{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textme{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+#moreoption{
+    display: none;
+}
+#msgbut{
+    margin-right: 2em;
+    width: 20%;
+    height: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}
+#moreintimate{
+    width: 20%;
+    display: inline-block;
+}
+#morebut{
+    width: 100%;
+    height: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+}
+#naaaddress{
+    width: 96.5%;
+    height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+    
+}
+
+#moreoption{
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transform: translateY(5em);
+   position: relative;
+}
+#moreoptionb{
+    width: 100%;
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}
+#mob::before{
+    content: '';
+    transform: translate3d(0em,-1.3em,0em) rotate(45deg);
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgb(255, 255, 255);
+    
+}
+#mob{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.386);
+    border-radius: 10px;
+    transform: translateY(-4em);
+}
+
+#morebut:focus + #moreoption{
+    display: block;
+}
+
+
+#postwriterbap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#postwriter{
+    width: 100%;
+    height: 10em;
+
+}
+#writepost{
+    width: 100%;
+    height: 11em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+#post{
+    width: 100%;
+    height: 11em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#poscaptionbap{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+#postattachbap{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#writepostinput{
+   
+    width: 75%;
+    height: 5em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+#poswriteruserlogo{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+.postattachb:hover{
+    background-color: rgb(227, 226, 226);
+}
+#postcaption{
+    width: 80%;
+    height: 3.5em;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+#postcaption:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+#postlogo{
+  width: 5em;
+  height: 5em;
+}
+
+#postattachbap>button label{
+    font-size: 20px;
+}
+.postattachb{
+    width: 15%;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+
+#jobdisc,#jobcompany,#naaaddress{
+    color: #fff;
+}
+#topic{
+    font-size: 18px;
+}
+
+/* timelineposts starts here */
+
+#timeline{
+  background-color: rgba(230, 224, 224, 0);
+    width: 100%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#timelinepostbap{
+    width: 98%;
+    height:30em;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+#timelinepost{
+    width: 98%;
+    height: 85%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 10px;
+}
+#tmpuserlogo{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+#tmpuserid{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+}
+#tmplocationlogo{
+    width: 1em;
+    height: 1em;
+    padding-left: 2%;
+}
+#tmplocationb{
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: rgb(70, 48, 109);
+    border: none;
+    outline: none;
+}
+#tmpmedia{
+    width: 100%;
+    height: 76%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+   
+}
+#tmpmediaimg{
+    width: 19rem;
+    height: 19rem;
+}
+
+#reactiontopost{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.reactpostb>label{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(115, 113, 113);
+}
+.reactpostb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin: 2px;
+}
+#reactpost{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#reactlogopic{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#tmpostoptiondiv{
+    border: none;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+}
+#tmpostoptiondivb{
+    border: none;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+}
+#tmpostoption{
+    width: 3em;
+    height: 3em;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border: none;
+}

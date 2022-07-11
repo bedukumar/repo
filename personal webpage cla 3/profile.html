@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bedu.css" />
+    <style>
+      body {
+        /* height: 1800px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: none;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        margin: 0px;
+        /* background-color: rgb(229, 229, 229);*/
+        background-color: white;
+      }
+      #profilebody {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 85%;
+        border-radius: 20px;
+        /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.632);*/
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+      }
+      #status {
+        width: 95%;
+        height: 20em;
+        border-radius: 20px;
+        /* box-shadow: 0px 0px 5px rgb(99, 99, 99);*/
+        background-color: rgb(229, 229, 229);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      #profilepicbody {
+        background-color: rgb(255, 255, 255);
+        width: 11em;
+        height: 11em;
+        margin: 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.632);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #profilepic {
+        width: 98%;
+        height: 98%;
+        /* background-color: rgb(48, 47, 47);*/
+        background-image: url("IMG_20210618_160716.jpg");
+        background-size: cover;
+        border-radius: 25px;
+      }
+      #picsection {
+        width: 100%;
+        height: 96%;
+        /* background-color: rgb(255, 255, 255);*/
+        /* background-color: rgb(229, 229, 229);*/
+        background-image: url("pexels-harrison-candlin-2441454.jpg");
+        background-size: cover;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #identity {
+        width: 80%;
+        height: 85%;
+        background-color: rgba(0, 0, 0, 0.336);
+        /* background-color: rgb(229, 229, 229);*/
+
+        border-radius: 10px;
+        margin: 1%;
+        margin-left: 3%;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #separation {
+        width: 95%;
+        height: 0.3em;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: rgba(198, 198, 198, 0);
+      }
+
+      #activity {
+        width: 95%;
+        height: 75%;
+        border-radius: 20px;
+        /* background-color: rgb(255, 255, 255);*/
+        background-color: rgb(229, 229, 229);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #khamba {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #searchbar {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #searchtextbap {
+        width: 85%;
+        border-radius: 15px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(229, 229, 229);
+      }
+      #searchtext {
+        width: 100%;
+        height: 3em;
+        padding: 5px;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: medium;
+        border: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      #searchtext:focus::-webkit-input-placeholder {
+        opacity: 0;
+      }
+      #advsearch {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #imgsearch {
+        height: 4em;
+        width: 4em;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+      }
+
+      #logo {
+        font-family: -apple-system, courgette regular;
+        width: 15%;
+        font-size: 5em;
+        font-weight: bold;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.415);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #imgsearchbeta {
+        width: 3em;
+        height: 3em;
+      }
+
+      #sabkabap {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #pehlabeta {
+        width: 15%;
+        height: 3000px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /*  position: absolute;*/
+      }
+      #dusrabeta {
+        width: 85%;
+        height: 3000px;
+        scroll-behavior: smooth;
+      }
+      #menubarbap {
+        width: 100%;
+        height: 100%;
+
+        top: 0em;
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      #profilepicbodybap {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #profilepicbap {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      #userid {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 10px;
+        /* background-color: rgba(234, 234, 234, 0.355);*/
+      }
+      #useridtag {
+        width: 85%;
+        color: #fff;
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+      }
+      #menubar {
+        width: 10%;
+        height: 85%;
+        background-color: black;
+        border-radius: 30px;
+        margin-top: 4%;
+
+        position: fixed;
+      }
+      #usernametag {
+        color: #fff;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sabkabap">
+      <div id="pehlabeta">
+        <div id="menubarbap">
+          <div id="menubar"></div>
+        </div>
+      </div>
+      <div id="dusrabeta">
+        <nav id="khamba">
+          <div id="logo">bedu</div>
+          <div id="advsearch">
+            <form id="searchbar" action="/search">
+              <div id="searchtextbap">
+                <input
+                  type="text"
+                  placeholder="search profiles here..."
+                  name="searchtext"
+                  id="searchtext"
+                />
+                <button id="imgsearch">
+                  <img id="imgsearchbeta" src="search.png" alt="search" />
+                </button>
+              </div>
+            </form>
+          </div>
+          <div id="topic">try premium</div>
+        </nav>
+        <div id="profilebody">
+          <div id="status">
+            <div id="picsection">
+              <div id="profilepicbodybap">
+                <div id="profilepicbap">
+                  <div id="profilepicbody">
+                    <div id="profilepic"></div>
+                  </div>
+                </div>
+                <div id="userid">
+                  <div id="usernametag">Ved Prakash Soni</div>
+                  <div id="useridtag">@bedukumar</div>
+                </div>
+              </div>
+              <div id="identity">
+                <div id="jnc">
+                  <div id="jobstatus">
+                    <div id="jobdisc">
+                      Associate Software Engineer at Patanahi.com| Ex - Student
+                      ,Vignanite
+                    </div>
+                    <div id="jobcompanybap">
+                      <div id="jobcompany">
+                        Patanahi.com,Hyderabad,Telangana,India
+                      </div>
+                      <div id="jobcompanyconatct">
+                        <a id="companyinfo" href="#companyinfo">
+                          Contact info</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div id="companyidonbedu">
+                    <img src="clogo.jpg" alt="companylogo" id="clogo" />
+                    <div id="companynam">
+                      <button id="companyidb">
+                        <a href="#patanahi">Patanahi </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="naaaddress">Vadlamudi,Guntur,Andhra Pradesh,India</div>
+                <div id="intimateme">
+                  <div id="textme">
+                    <button id="msgbut">message</button>
+                    <div id="moreintimate">
+                      <button id="morebut">more</button>
+                      <div id="moreoption">
+                        <div id="mob">
+                          <button id="moreoptionb">ab kya</button>
+                          <button id="moreoptionb">bachche</button>
+                          <button id="moreoptionb">ki jaan</button>
+                          <button id="moreoptionb">lega</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="separation"></div>
+          <div id="activity">
+            <div id="postwriterbap">
+              <div id="postwriter">
+                <div id="writepost">
+                  <form action="#post" id="post">
+                    <div id="poscaptionbap">
+                      <img
+                        id="poswriteruserlogo"
+                        src="IMG_20210618_160716.jpg"
+                        alt="ved"
+                      />
+                      <input
+                        type="text"
+                        id="postcaption"
+                        placeholder="What's on your mind ..."
+                      />
+                    </div>
+                    <div id="postattachbap">
+                      <button class="postattachb">
+                        <img id="postlogo" src="image.png" alt="" />
+                        <label for="postlogopic">photo</label>
+                      </button>
+                      <button class="postattachb">
+                        <img id="postlogo" src="multimedia.png" alt="" />
+                        <label for="postlogopic">video</label>
+                      </button>
+                      <button class="postattachb">
+                        <img id="postlogo" src="event.png" alt="" />
+                        <label for="postlogopic">event</label>
+                      </button>
+                      <button class="postattachb">
+                        <img id="postlogo" src="content-writing.png" alt="" />
+                        <label for="postlogopic">article</label>
+                      </button>
+                      <button class="postattachb">
+                        <img id="postlogo" src="location.png" alt="" />
+                        <label for="postlogopic">location</label>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="timeline">
+              <div id="timelinepostbap">
+                <div id="timelinepost">
+                  <div id="tmpuserid">
+                    <img id="tmpuserlogo" src="1653768047697.jpg" alt="" />
+                    <h3
+                      style="
+                        display: inline;
+                        margin-left: 1%;
+                        font-family: Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      Ved Prakash Soni
+                    </h3>
+                  </div>
+                  <div id="tmpcaption">
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin: 0px;
+                        padding-left: 2%;
+                        padding-right: 2%;
+                      "
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Iure dolorem asperiores iste quas delectus dicta, dolores
+                      numquam, necessitatibus impedit aliquam, soluta illum
+                      suscipit veniam repellat assumenda. Natus laboriosam nihil
+                      rem.
+                    </p>
+                    <div id="tmpcaptionlocation">
+                      <img id="tmplocationlogo" src="world.png" alt="" />
+                      <a
+                        href="https://www.google.com/maps/d/u/0/viewer?hl=en_US&mid=15vZ4KiDo8bGOPaqGYjSljVjxOiI&ll=22.55965675342302%2C88.35530150000002&z=15"
+                        style="
+                          text-decoration: none;
+                          font-family: Arial, Helvetica, sans-serif;
+                        "
+                        >Victoria Memorial Mueseum,West Bengal,India</a
+                      >
+                    </div>
+                  </div>
+                  <div id="tmpmedia">
+                    <img id="tmpmediaimg" src="ganesha.jpg" alt="" />
+                  </div>
+                  <div id="reactiontopost">
+                    <div id="reactpost">
+                      <button class="reactpostb">
+                        <img id="reactlogopic" src="like.png" alt="" />
+                        <label for="reactlogopic">Like</label>
+                      </button>
+                      <button class="reactpostb">
+                        <img id="reactlogopic" src="comment.png" alt="" />
+                        <label for="reactlogopic">Comment</label>
+                      </button>
+                      <button class="reactpostb">
+                        <img id="reactlogopic" src="share.png" alt="" />
+                        <label for="reactlogopic">Share</label>
+                      </button>
+                    </div>
+                    <div id="tmpostoptiondiv">
+                      <button id="tmpostoptiondivb">
+                        <img id="tmpostoption" src="option.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="timelinepostbap">
+                <div id="timelinepost">
+                  <div id="tmpuserid">
+                    <img id="tmpuserlogo" src="1653768047697.jpg" alt="" />
+                    <h3
+                      style="
+                        display: inline;
+                        margin-left: 1%;
+                        font-family: Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      Ved Prakash Soni
+                    </h3>
+                  </div>
+                  <div id="tmpcaption">
+                    <p
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin: 0px;
+                        padding-left: 2%;
+                        padding-right: 2%;
+                      "
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Iure dolorem asperiores iste quas delectus dicta, dolores
+                      numquam, necessitatibus impedit aliquam, soluta illum
+                      suscipit veniam repellat assumenda. Natus laboriosam nihil
+                      rem.
+                    </p>
+                    <div id="tmpcaptionlocation">
+                      <img id="tmplocationlogo" src="world.png" alt="" />
+                      <a
+                        href="https://www.google.com/maps/d/u/0/viewer?hl=en_US&mid=15vZ4KiDo8bGOPaqGYjSljVjxOiI&ll=22.55965675342302%2C88.35530150000002&z=15"
+                        style="
+                          text-decoration: none;
+                          font-family: Arial, Helvetica, sans-serif;
+                        "
+                        >Victoria Memorial Mueseum,West Bengal,India</a
+                      >
+                    </div>
+                  </div>
+                  <div id="tmpmedia">
+                    <img id="tmpmediaimg" src="ganesha.jpg" alt="" />
+                  </div>
+                  <div id="reactiontopost">
+                    <div id="reactpost">
+                      <button class="reactpostb">
+                        <img id="reactlogopic" src="like.png" alt="" />
+                        <label for="reactlogopic">Like</label>
+                      </button>
+                      <button class="reactpostb">
+                        <img id="reactlogopic" src="comment.png" alt="" />
+                        <label for="reactlogopic">Comment</label>
+                      </button>
+                      <button class="reactpostb">
+                        <img id="reactlogopic" src="share.png" alt="" />
+                        <label for="reactlogopic">Share</label>
+                      </button>
+                    </div>
+                    <div id="tmpostoptiondiv">
+                      <button id="tmpostoptiondivb">
+                        <img id="tmpostoption" src="option.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
